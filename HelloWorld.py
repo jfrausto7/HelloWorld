@@ -24,3 +24,22 @@ def Add(num1, num2):
 
 sum = Add(2,5)
 print(sum)
+
+#below is a example of a class
+
+class Parent:
+    def __init__(self):
+        #the pass line is a filler that does nothing
+        pass
+    def parentFunc(self):
+        print("This is the parent class")
+
+class Child(Parent):
+    def __init__(self):
+        pass
+    def childFunc(self):
+        print("This is the child class")
+
+c = Child()
+c.parentFunc()
+c.childFunc()
