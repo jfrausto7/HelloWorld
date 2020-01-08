@@ -11,9 +11,15 @@ This was a pain to get to work.
 
 # import the docx module first
 import docx
+import openpyxl
 
 # now assign a variable for it
 doc = docx.Document("./testdoc.docx")
 
 for para in doc.paragraphs:
     print(para.text)
+
+
+#openpyxl stuff below
+
+wb = openpyxl.load_workbook("testbook.xlsx")
