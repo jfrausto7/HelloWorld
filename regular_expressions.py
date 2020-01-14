@@ -15,3 +15,9 @@ stuff = mo.group()
 # print it out
 print(stuff)
 
+# greedy search below
+nameRegex = re.compile(r"First Name: (.*)")
+moo = nameRegex.search("First Name: Jacob")
+moo.group(1)
+
+
