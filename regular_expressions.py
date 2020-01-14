@@ -20,4 +20,7 @@ nameRegex = re.compile(r"First Name: (.*)")
 moo = nameRegex.search("First Name: Jacob")
 moo.group(1)
 
+# using the sub method
+agentRegex = re.compile(r'Agent \w+')
+agentRegex.sub('Censored', 'Today I finally sat down with Agent Smithers and had a little chat.')
 
