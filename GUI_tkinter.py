@@ -21,6 +21,15 @@ theButton = Button(None, text="Click Here", fg="blue")
 theButton.pack(fill = X)
 buttonTwo = Button(None, text="Hello!", fg="red")
 buttonTwo.pack(side=RIGHT, fill = Y)
+
+# check button
+cbutton = Checkbutton(root, text = "Remember name")
+cbutton.pack()
+
+# entry
+entrySpace = Entry(root)
+entrySpace.pack()
+
 # mainloop function
 root.mainloop()
 
